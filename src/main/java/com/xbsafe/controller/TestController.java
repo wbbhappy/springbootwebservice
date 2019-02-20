@@ -22,7 +22,7 @@ public class TestController {
 	@ResponseBody
 	public String userService(){
 		System.out.println("==============");
-		User u = userService.getUser("1");
+		User u = userService.getUser("test01");
 		System.out.println(u.getName());
 		return u.getName() + "------>" + u.getAge();
 	}
@@ -32,7 +32,7 @@ public class TestController {
 	@ResponseBody
 	public String userService2(){
 		System.out.println("==============");
-		User u = userService.getUser2("1");
+		User u = userService.getUser2("test01");
 		System.out.println(u.getName());
 		return u.getName() + "------>" + u.getAge();
 	}
